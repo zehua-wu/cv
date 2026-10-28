@@ -1,0 +1,66 @@
+/* Adapted from Jon Barron's academic personal website (https://github.com/jonbarron/jonbarron.github.io). */
+/* The original site uses Lato, 14px text, an 800px layout, and simple linked publication rows. */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; padding: 0; background: #fff; color: #000; }
+a { color: #1772d0; text-decoration: none; }
+a:focus, a:hover { color: #f09228; text-decoration: none; }
+body, td, th, tr, p, a, li { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 14px; line-height: 1.48; }
+strong { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 14px; }
+h2 { margin: 0; font-weight: normal; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 22px; }
+.papertitle { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: 700; }
+.name { padding-top: 20px; margin: 0; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 32px; line-height: 1.25; }
+
+.page { width: 100%; max-width: 800px; margin: 0 auto; border: 0; border-spacing: 0; border-collapse: separate; }
+.fullwidth { width: 100%; border: 0; border-spacing: 0; border-collapse: separate; }
+.bio-cell { padding: 2.5%; width: 63%; vertical-align: middle; }
+.photo-cell { padding: 2.5%; width: 37%; max-width: 37%; vertical-align: middle; }
+.photo-cell img { width: 100%; max-width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; display:block; }
+.contact { text-align: center; white-space: normal; }
+.section-cell { padding: 16px; width: 100%; vertical-align: middle; }
+.section-cell p { margin-bottom: 0; }
+.entry-cell { padding: 8px 16px 18px; vertical-align: top; }
+.entry-cell p { margin-top: 7px; margin-bottom: 7px; }
+.entry-title { font-weight: 700; }
+.entry-meta { color: #333; }
+.entry-date { color: #666; }
+.entry-summary { margin-bottom: 0; }
+.publication { padding: 12px 16px; vertical-align: top; }
+.publication p { margin: 5px 0 0; }
+.projects { border-spacing: 0 10px; }
+.project-visual { padding: 16px; width: 24%; vertical-align: middle; }
+.project-visual img { display: block; width: 160px; height: 160px; max-width: 100%; object-fit: contain; }
+.project-copy { padding: 8px 16px; width: 76%; vertical-align: middle; }
+.project-copy p { margin-top: 8px; margin-bottom: 0; }
+.project-copy .keywords { margin-top: 7px; color: #555; font-size: 12.5px; }
+.pub-name { font-weight: 700; }
+.muted { color: #555; }
+.credits { padding: 16px; text-align: right; color: #555; font-size: 12px; }
+.credits a, .credits strong { font-size: 12px; }
+.list-narrow { padding-left: 18px; margin: 6px 0 0; }
+.list-narrow li { margin-bottom: 2px; }
+.narrow p { margin: 6px 0; }
+.badge { background: #ffffd0; padding: 0 2px; }
+:focus-visible { outline: 2px solid #1772d0; outline-offset: 3px; }
+
+@media (max-width: 620px) {
+  body { padding: 0 8px; }
+  .bio-cell, .photo-cell { display: block; width: 100%; max-width: 100%; padding: 12px 16px; }
+  .bio-cell { padding-top: 16px; }
+  .name { padding-top: 4px; }
+  .photo-cell { padding: 4px 16px 14px; }
+  .photo-cell img { width: 156px; max-width: 156px; margin: 0 auto; }
+  .section-cell { padding: 16px; }
+  .entry-cell { padding: 8px 16px 14px; }
+  .project-visual { padding: 12px 10px 12px 16px; width: 112px; vertical-align: top; }
+  .project-visual img { width: 100px; height: 100px; }
+  .project-copy { padding: 8px 12px 10px 0; width: auto; vertical-align: top; }
+  .publication { padding: 10px 16px; }
+}
+@media (max-width: 420px) {
+  .project-visual { padding: 8px 8px 8px 16px; width: 87px; }
+  .project-visual img { width: 72px; height: 72px; }
+  .project-copy { padding: 8px 10px 12px 0; }
+}

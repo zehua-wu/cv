@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Zehua Wu">
+  <meta name="description" content="Zehua Wu — Electrical Engineering M.S.E. from the University of Pennsylvania. Software engineering, applied AI, digital pathology and robotics.">
+  <meta property="og:title" content="Zehua Wu">
+  <meta property="og:description" content="Software Engineering · Applied AI · Robotics">
+  <meta property="og:type" content="website">
+  <title>Zehua Wu</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+<table class="page" role="presentation"><tbody><tr><td>
+
+  <!-- About: faithful to the top two-column structure of Jon Barron's academic website. -->
+  <table class="fullwidth" role="presentation"><tbody><tr>
+    <td class="bio-cell">
+      <p class="name" style="text-align:center">Zehua Wu</p>
+      <p>
+        I received my M.S.E. in <strong>Electrical Engineering</strong> from the
+        <a href="https://www.upenn.edu/">University of Pennsylvania</a> in 2026.
+        My interests lie in software engineering, applied AI, and robotics, particularly in turning research ideas into reliable real-world systems.
+      </p>
+      <p>
+        I worked as a <strong>Software Engineering Intern at Google</strong> on offline-first multimodal retrieval.
+        I have also developed research software at <strong>Penn Medicine</strong> for AI-assisted digital pathology,
+        built a full-stack agent-assisted ordering application, and studied industrial robot calibration and error compensation.
+      </p>
+      <p class="contact">
+        <a href="mailto:wuzehua15@163.com">Email</a> &nbsp;/&nbsp;
+        <a href="data/Zehua_Wu_CV.pdf" target="_blank" rel="noopener">CV</a> &nbsp;/&nbsp;
+        <a href="https://github.com/zehua-wu" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </td>
+    <td class="photo-cell">
+      <!-- Uses the GitHub profile picture; the local initials image is the offline fallback. -->
+      <img src="https://avatars.githubusercontent.com/u/179361395?v=4" alt="Zehua Wu GitHub profile photo" onerror="this.onerror=null;this.src='images/profile-placeholder.svg';">
+    </td>
+  </tr></tbody></table>
+
+  <!-- Experience -->
+  <table class="fullwidth" role="presentation"><tbody>
+    <tr><td class="section-cell"><h2>Experience</h2></td></tr>
+    <tr><td class="entry-cell">
+      <span class="papertitle">Google — Software Engineering Intern</span>
+      <span class="entry-date">&nbsp;|&nbsp; Jun. 2025 – Aug. 2025</span><br>
+      <em>Offline-First Multimodal Local Content Retrieval System</em>
+      <p>Designed an offline retrieval pipeline spanning file I/O, parsing, embeddings, vector storage, and search. Supported <strong>5 file formats</strong>, <strong>10K+ local documents</strong>, and incremental indexing.</p>
+      <p>Integrated BERT text embeddings and MobileCLIP image encoders with TensorFlow Lite and ChromaDB, achieving <strong>85% Recall@10</strong> and <strong>P95 latency under 300 ms</strong>. INT8 quantization reduced the model memory footprint by <strong>67%</strong>. Developed Flutter tests and contributed to cross-platform integration and code review.</p>
+      <span class="muted">Flutter, TensorFlow Lite, BERT, MobileCLIP, ChromaDB</span>
+    </td></tr>
+  </tbody></table>
+
+  <!-- Projects: thumbnails on left, details on right, matching Barron's publication row format. -->
+  <table class="fullwidth" role="presentation"><tbody><tr><td class="section-cell">
+    <h2>Selected Projects &amp; Research</h2>
+    <p>My work spans machine learning systems, full-stack engineering, medical imaging, and robot calibration.</p>
+  </td></tr></tbody></table>
+
+  <table class="fullwidth projects" role="presentation"><tbody>
+    <tr>
+      <td class="project-visual"><img src="images/tissuelab.svg" alt="Illustrative digital pathology slide thumbnail"></td>
+      <td class="project-copy">
+        <a href="https://tissuelab.org/" target="_blank" rel="noopener noreferrer"><span class="papertitle">TissueLab — AI Agentic System for Digital Pathology</span></a><br>
+        Penn Medicine · Zhi Huang Lab · Research Software Developer<br>
+        <em>Dec. 2025 – Jun. 2026</em><br>
+        <a href="https://tissuelab.org/" target="_blank" rel="noopener noreferrer">website</a>
+        <p>Implemented runtime exception handling and a unified API response contract for pathology workflows. Optimized Whole Slide Image (WSI) loading by <strong>4.07×</strong> and orchestrated foundation models for necrosis, inflammation, and edema analysis. Integrated human-in-the-loop correction, achieving <strong>92.6% agreement</strong> with pathologist hand grading; supported Docker/GitHub Actions CI/CD on GCP.</p>
+        <p class="keywords">Python · FastAPI · Node.js · OpenSeadragon · GPT-5 · GCP</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="project-visual"><img src="images/onlineorder.svg" alt="Illustration of a distributed ordering system"></td>
+      <td class="project-copy">
+        <a href="https://github.com/zehua-wu/OnlineOrder-Agent" target="_blank" rel="noopener noreferrer"><span class="papertitle">OnlineOrder — Full-Stack Agent-Assisted Ordering</span></a><br>
+        Personal software project · <em>Jan. 2025 – Apr. 2025</em><br>
+        <a href="https://github.com/zehua-wu/OnlineOrder-Agent" target="_blank" rel="noopener noreferrer">agent code</a>
+        <p>Built an ordering system with Redis Lua atomic reservations, Kafka event processing, PostgreSQL persistence, WebSocket updates, and idempotent checkout. Load tests reached <strong>1,458.82 QPS</strong> at <strong>128.40 ms P99</strong> with zero overselling. Developed an LLM tool-calling orchestrator with Redis-backed multi-turn sessions; across 300 evaluation scenarios, it achieved <strong>91% tool-calling accuracy</strong> and <strong>90% task success</strong>.</p>
+        <p class="keywords">Java · Spring Boot · FastAPI · PostgreSQL · Redis · Kafka · Docker</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="project-visual"><img src="images/robot-calibration.svg" alt="Illustration of an industrial robot arm and laser tracking target"></td>
+      <td class="project-copy">
+        <span class="papertitle">Industrial Robot Positioning Accuracy Improvement</span><br>
+        NSFC-funded project (No. 51905258) · <em>Nov. 2023 – Jun. 2024</em>
+        <p>Developed a modified Denavit–Hartenberg kinematic model for a <strong>Stäubli TX60</strong> robot. Conducted multi-pose calibration using a <strong>Leica AT960</strong> laser tracker, then applied optimization and neural-network compensation. Reduced end-effector <strong>position error by 90.42%</strong> and <strong>orientation error by 80.19%</strong>.</p>
+        <p class="keywords">MATLAB · Python · Kinematics · Parameter Identification · Neural Networks</p>
+      </td>
+    </tr>
+  </tbody></table>
+
+  <!-- Publications: conservative references with metadata exactly as presented in the supplied CV. -->
+  <table class="fullwidth" role="presentation"><tbody>
+    <tr><td class="section-cell"><h2>Publications &amp; Patent</h2></td></tr>
+    <tr><td class="publication"><span class="pub-name">Research on Robot Parameter Identification Based on Black-winged Kite Optimization Algorithm</span><br>
+      <em>IAENG International Journal of Computer Science</em>, 2025.</td></tr>
+    <tr><td class="publication"><span class="pub-name">Compensation of Industrial Robot Positioning Accuracy Based on Multi-layer Perceptron</span><br>
+      <em>Instrument Technique &amp; Sensor</em>, 2025.</td></tr>
+    <tr><td class="publication"><span class="pub-name">Robot Geometry Parameter Identification Method Based on Multi-Objective Differential Evolution Algorithm</span><br>
+      <em>China Measurement &amp; Test</em>, 2024.</td></tr>
+    <tr><td class="publication"><span class="pub-name">A Multi-Model Detection Method and System for Intelligent Transportation</span><br>
+      Patent publication No. CN116311100A, 2023.</td></tr>
+  </tbody></table>
+
+  <table class="fullwidth" role="presentation"><tbody>
+    <tr><td class="section-cell"><h2>Education</h2></td></tr>
+    <tr><td class="entry-cell narrow">
+      <span class="papertitle">University of Pennsylvania</span>, Philadelphia, USA<br>
+      M.S.E. in Electrical Engineering · School of Engineering and Applied Science<br>
+      <span class="entry-date">Sep. 2024 – May 2026 · GPA: 3.44/4.00</span>
+    </td></tr>
+    <tr><td class="entry-cell narrow">
+      <span class="papertitle">Southeast University Chengxian College</span>, Nanjing, China<br>
+      B.Eng. in Automation · School of Electronic and Computer Engineering<br>
+      <span class="entry-date">Sep. 2020 – Jun. 2024 · GPA: 3.59/4.00 · Rank: 4/58 (Top 6%)</span>
+    </td></tr>
+  </tbody></table>
+
+  <table class="fullwidth" role="presentation"><tbody>
+    <tr><td class="section-cell"><h2>Technical Skills</h2></td></tr>
+    <tr><td class="entry-cell narrow">
+      <p><strong>Languages:</strong> Python, Java, C++, SQL, JavaScript</p>
+      <p><strong>Frameworks:</strong> Spring Boot, FastAPI, Flutter, React, Node.js, .NET, PyTorch</p>
+      <p><strong>Infrastructure:</strong> Redis, Kafka, ChromaDB, Docker, AWS, GCP</p>
+      <p><strong>Tools:</strong> Postman, MATLAB, Git, Codex, Keil MDK, Arduino</p>
+    </td></tr>
+  </tbody></table>
+
+  <table class="fullwidth" role="presentation"><tbody>
+    <tr><td class="section-cell"><h2>Leadership &amp; Service</h2></td></tr>
+    <tr><td class="entry-cell">
+      <span class="papertitle">Student Volunteer — Institute of Dermatology, Chinese Academy of Medical Sciences</span><br>
+      <em>Nanjing, China · Feb. 2021 – Apr. 2021</em>
+      <p>Coordinated a student volunteer team, assigned responsibilities, and provided on-site guidance and services.</p>
+    </td></tr>
+  </tbody></table>
+
+  <table class="fullwidth" role="presentation"><tbody><tr><td class="credits">
+    Layout adapted from <a href="https://github.com/jonbarron/jonbarron.github.io" target="_blank" rel="noopener noreferrer">Jon Barron's academic website template</a>.
+  </td></tr></tbody></table>
+</td></tr></tbody></table>
+</body>
+</html>
